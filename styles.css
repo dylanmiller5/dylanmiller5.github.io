@@ -1,18 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 head {
     text-align: center;
 }
 
 body {
+    font-family: cursive;
     text-align: center;
     background-color: white;
 }
 
-li {
-    float: left;
-  }
-  
-  a {
-    display: block;
-    padding: 8px;
-    background-color: #dddddd;
-  }
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
