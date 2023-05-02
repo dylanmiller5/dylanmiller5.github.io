@@ -45,6 +45,7 @@ ul {
     display: flex;
 }
 .menu {
+        
         display: flex;
         gap: 1em;
         font-size: 18px;
