@@ -66,22 +66,19 @@ ul {
         padding: 5px 14px;
         }
 
-.nameArea {
-
-    font: 1.5em sans-serif;
-    padding: 100px;
-    padding-bottom: 0%;
-
-
-    width: 1900px;
-    height: 175px;
-}
-
 .Header{
  
     font: 1.5em sans-serif;
     position: relative;
     padding: 100px;
+    padding-top: 55px;
     padding-bottom: 0%;
 }
 
+.subtext{
+    padding-top: 10px;
+}
+
+.libraries{
+    position: relative; right: 0px;
+}
