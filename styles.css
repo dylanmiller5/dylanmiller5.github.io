@@ -4,9 +4,15 @@ head {
 
 body {
     text-align: center;
-    background-color: peru;
+    background-color: white;
 }
 
-navigationBar {
-    display: inline;
-}
+li {
+    float: left;
+  }
+  
+  a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+  }
