@@ -4,26 +4,42 @@
         <!--links to the bootstrap library -->
         <!--       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
         <!--creates the link to the css for styling -->
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles/styles.css">
         <title>Dylan Miller's Portoflio</title>
     </head>
 
     <body>
     <!-- navigation bar-->
     <!-- jumps to different parts of the same page rather than different pages-->
-        <nav class="navbar">
-            <ul class="nav-links">
-                <div class="logo">
-                    <!-- place for a logo to be added later-->
-                </div>
-                <div class="menu">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#aboutMe">About Me</a></li>
-                    <li><a href="#Projects">Projects</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                </div>
+    <header>
+        <div id="brand"><a href="/">Dylan Miller </a></div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>    
         </nav>
+            
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <script src="JS/index.js"></script>
+    </body>
+    </html>
+    
+    
+        
         <br>   <br>   <br>   <br>   <br> 
 
         <h1 style="font-size: 5em;">Dylan Miller</h1>
@@ -74,16 +90,24 @@
                     <h2><u>Skills</u></h2>
                 </div>
                 <div class="langauges">
+                    <h3>Langauges</h3>
+                    <img src="python.jpg" height="65" width="65">
+                    <img src="html.png" height="65" width="65">
+                    <img src="css.png" height="65" width="65">
+                    <br>
+                    <img src="sql.png" height="80" width="85">
+                    <img src="csharp.png" height="80" width="85">
                     
+
                 </div>
                 <div class="libraries">
                     <h3>Libraries</h4>
-                    <img src="flask.jpg" height="60" width="95">
-                    <img src="bootstrap.png" height="60" width="95">
-                    <img src="jinja.png" height="60" width="95">
+                    <img src="images/flask.jpg" height="60" width="95">
+                    <img src="images/bootstrap.png" height="60" width="95">
+                    <img src="images/jinja.png" height="60" width="95">
                     <br>
-                    <img src="git.png" height="60" width="95">
-                    <img src="sql.jpg" height="60" width="95">
+                    <img src="images/git.png" height="60" width="95">
+                    <img src="images/sql.jpg" height="60" width="95">
                   
                 </div>
           
@@ -106,6 +130,11 @@
             </div>
         </div>
 
+        <!--resume -->
+        <div class="Header">
+            <h2>Resume</h2>
+        </div>
+
         <!-- Contact -->
         <div class="Contact">
             <a id="Contact">
@@ -114,15 +143,15 @@
                 </div>
                 
                 <a href="https://github.com/dylanmiller5">
-                    <img src="gitLogo.png" height="50" width="50">
+                    <img src="images/gitLogo.png" height="50" width="50">
                 </a>
                 
                 <a href="https://www.linkedin.com/in/dylan-miller-820ab5274/">
-                    <img src="LinkedIn.png" height="50" width="50">
+                    <img src="images/LinkedIn.png" height="50" width="50">
                 </a>
 
                 <a href="mailto:2005dcm@gmail.com" target="_blank">
-                    <img src="mail.png" heihgt="50" width="50">
+                    <img src="images/mail.png" heihgt="50" width="50">
                 </a>
         </div>
     </body>
