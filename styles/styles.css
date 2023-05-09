@@ -24,6 +24,7 @@ header {
   justify-content: space-between;
 }
 
+
 #brand {
   font-weight: bold;
   font-size: 18px;
@@ -110,16 +111,21 @@ ul li:hover {
     display: none;
   }
 
+
+
   #hamburger-icon {
     display: block;
   }
 }
 
 
-  h2{
 
-        font: 1.5em sans-serif;
-        position: relative;
+
+  h2{
+      padding-top: 15px;
+      padding-bottom: 5px;
+      font: 1.5em sans-serif;
+      position: relative;
     }
  
   
@@ -135,7 +141,6 @@ ul li:hover {
 .libraries{
     position: relative; right: 0px;
 }
-
 
 
 
