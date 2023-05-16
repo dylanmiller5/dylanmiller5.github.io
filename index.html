@@ -1,57 +1,55 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <!--links to the bootstrap library -->
-        <!--       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
-        <!--creates the link to the css for styling -->
-        <link rel="stylesheet" href="styles/styles.css">
-        <title>Dylan Miller's Portoflio</title>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tom's Catering</title>
+    <!--local js-->
+    <script src="js/toggleNav.js"></script>
+    
+    <!-- styles -->
+        <!-- used to get the toggle button -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+        <!--CSS styling-->
+        <link rel="stylesheet" href="CSS/styles.css" />
+        <!--bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!--bootstrap icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        
     </head>
 
-    <body>
-    <!-- navigation bar-->
-    <!-- jumps to different parts of the same page rather than different pages-->
-    <header>
-        <div id="brand"><a href="/">Dylan Miller </a></div>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="#aboutMe">About Me</a></li>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>    
-        </nav>
-            
-        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <ul class="mobile-menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="#aboutMe">About Me</a></li>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#Contact">Contact</a></li>
-                
-            </ul>
+  <body>
+    <nav>
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+            <a href="/">
+                <h2 id="Head">Dylan Miller</h2>
+            </a>
+          <!--toggles nav on smaller screens-->
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
-    </header>
-    <script src="JS/index.js"></script>
+        <!-- links -->
+        <ul class="links">
+            <li><a href="/"><h4>Home</h4></a></li>
+            <li><a href="#aboutMe"><h4>About Me</h4></a></li>
+            <li><a href="#Projects"><h4>Projects</h4></a></li>
+            <li><a href="#Contact"><h4>Contact</h4></a></li>
+    </nav>
+    <!-- javascript -->
+    <script src="toggleNav.js"></script>
 
-    
-    
-        
-        <br>   <br>   <br>   <br>   <br> 
 
-        <h1 id="nameDisplayed" style="font-size: 5em;">Dylan Miller</h1>
-   
-        <div class="subtext">
-            <p>Hey, I'm Dylan. A software developer gaining practise with various langauges</p>
-        </div>
+    <h1 id="nameDisplayed" style="font-size: 5em;">Dylan Miller</h1>
 
         <br>
         <!-- About Me-->
         <div class="aboutMe">
-            <a id="aboutMe">
+            <a id="aboutMe"></a>
             <div class="Header">
             <h2><u>About Me</u></h2>
             </div>
@@ -85,54 +83,104 @@
 
         <br>
         <!-- Main Skills -->
+        <section>
             <div class="Skills">
                 <div class="Header">
-                    <h2><u>Skills</u></h2>
+                    <h2><b><ul></ul>SKILLS</b></u></h2>
+                    <br><br>
                 </div>
-                <div class="langauges">
-                    <h3>Langauges</h3>
-                    <img src="images/python.jpg" height="65" width="65">
-                    <img src="images/html.png" height="65" width="65">
-                    <img src="images/css.png" height="65" width="65">
-                    <br>
-                    <img src="images/sql.png" height="80" width="85">
-                    <img src="images/csharp.png" height="80" width="85">
-                    
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="images/flask.png" width="100px" height="100px">
+                        <p><b>flask</b></p>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <img src="images/html.png" width="100px" height="100px">
+                        <p><b>HTML</b></p>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <img src="images/css.png"width="100px" height="100px">
+                        <p><b>CSS</b></p>
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="images/sql.png" width="100px" height="100px">
+                        <p><b>SQL</b></p>
+                    </div>
 
                 </div>
-                <br>
-                <div class="libraries">
-                    <h3>Libraries</h4>
-                    <img src="images/flask.jpg" height="60" width="95">
-                    <img src="images/bootstrap.png" height="60" width="95">
-                    <img src="images/jinja.png" height="60" width="95">
-                    <br>
-                    <img src="images/git.png" height="60" width="95">
-                    <img src="images/sql.jpg" height="60" width="95">
-                  
-                </div>
-          
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="images/bootstrap.png" width="100px" height="100px">
+                        <p><b>Bootstrap</b></p>
+                    </div>
 
+                    <div class="col-sm-3">
+                        <img src="images/python.jpg" width="120px" height="100px">
+                        <p><b>Python</b></p>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <img src="images/csharp.png"width="100px" height="100px">
+                        <p><b>C#</b></p>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <img src="images/download.png" width="100px" height="100px">
+                        <p><b>Jinja</b></p>
+                    </div>
+                    <div class="row">
+                            <div class="col-sm-3">
+                                <img src="images/git.png" width="100px" height="100px">
+                                <p><b>git</b></p>
+                            </div>
+                            <div class="col-sm-3">
+                                <img src="images/sql.jpg" width="100px" height="100px">
+                                <p><b>SQLite</b></p>
+                            </div>
+                            <div class="col-sm-3">
+                                <img src="images/javascript.png" width="100px" height="100px">
+                                <p><b>JS</b></p>
+                            </div>
+                            <div class="col-sm-3">
+                                <img src="images/Office.jpg" width="100px" height="100px">
+                                <p><b>Office</b></p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <br>       
         <!-- Projects -->
         <div class="Projects">
-            <a id="Projects">
+            <a id="Projects"></a>
             <div class="Header">
-                <h2><u>Projects</u></h2>
-            </div>
-            <div class="featuredProject">
-                <h4>Featured Project</h4>
-                <p>Empty At Current</p>
-                <img src="images/black.jpg" height="250" width="250>">
-            </div>
-            <br>
-                <a href="/projects.html">
-                    <button class="button" role="button">Click To View More Projects</button>
-                </a>
-            </div>
-        </div>
-        <br>
-        <!--resume -->
+                <h2><u><b>Projects</b></u></h2>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card" style="width: 100%;">
+                            <div class="card-body">
+                              <h3 class="card-title">Ecommerce Website</h3>
+                              <img src="images/Project1.png" width="100%">
+                              <p class="card-text">This is a basic Ecommerce site that was made using HTML , CSS and JS.<br> Its currently still in development.</p>
+                              <a href="https://github.com/dylanmiller5/Toms-catering-site" class="card-link">View Repo</a>
+                              <br>
+                              <a href="#" class="card-link">View Site - Not yet being hosted</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3>project 2 </h3>
+                    </div>
+                </div>
+        
+        
+        
+        
+        
+        
+                <!--resume -->
             <h2><u>Resume</u></h2>
             <a href="/resume.pdf">
                 <button class="button" role="button">View Resume</button>
@@ -161,3 +209,8 @@
         </div>
     </body>
 </html>
+
+
+
+</html>
+
